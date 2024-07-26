@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CameraController : MonoBehaviour, IInputRecieve
@@ -45,5 +46,25 @@ public class CameraController : MonoBehaviour, IInputRecieve
     private void stayAtPosition(Vector3 position)
     {
         transform.position = position;
+    }
+
+    public void handleInteract(bool status)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public void handleDrop(bool status)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public void handleInventory(bool status)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public void handleUtility(bool status)
+    {
+        throw new System.NotImplementedException();
     }
 }

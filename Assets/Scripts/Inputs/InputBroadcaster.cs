@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,11 @@ public class InputBroadcaster : MonoBehaviour
     private Controlls inputActions;
     private InputStruct inputStruct = new InputStruct();
     private List<IInputRecieve> inputRecievers = new List<IInputRecieve>();
+
+    public static event Action<bool> pressedInteract;
+    public static event Action<bool> pressedDrop;
+    public static event Action<bool> pressedInventory;
+    public static event Action<bool> pressedUtility;
 
     private void Awake()
     {
@@ -36,6 +42,8 @@ public class InputBroadcaster : MonoBehaviour
 
         inputActions.GamePlay.Sprint.started += onSprintKeyPressed;
         inputActions.GamePlay.Sprint.canceled += onSprintKeyPressed;
+
+        inputActions.GamePlay.Drop.started += onDropKeyPressed;
     }
     private void Start()
     {
@@ -85,6 +93,15 @@ public class InputBroadcaster : MonoBehaviour
 
         inputActions.GamePlay.Sprint.started -= onSprintKeyPressed;
         inputActions.GamePlay.Sprint.canceled -= onSprintKeyPressed;
+
+        inputActions.GamePlay.Drop.started -= onDropKeyPressed;
+    }
+
+    private void onDropKeyPressed(InputAction.CallbackContext context)
+    {
+        //inputStruct.pressedDrop = context.ReadValueAsButton();
+        //broadcast();
+        pressedDrop?.Invoke(context.ReadValueAsButton());
     }
 
     private void onMouseMovement(InputAction.CallbackContext context)
@@ -101,20 +118,23 @@ public class InputBroadcaster : MonoBehaviour
 
     private void onInteractKeyPressed(InputAction.CallbackContext context)
     {
-        inputStruct.pressedInteract = context.ReadValueAsButton();
-        broadcast();
+        //inputStruct.pressedInteract = context.ReadValueAsButton();
+        //broadcast();
+        pressedInteract?.Invoke(context.ReadValueAsButton());
     }
 
     private void onUtilityKeyPressed(InputAction.CallbackContext context)
     {
-        inputStruct.pressedUtility = context.ReadValueAsButton();
-        broadcast();
+        //inputStruct.pressedUtility = context.ReadValueAsButton();
+        //broadcast();
+        pressedUtility?.Invoke(context.ReadValueAsButton());
     }
 
     private void onInventoryKeyPressed(InputAction.CallbackContext context)
     {
-        inputStruct.pressedInventory = context.ReadValueAsButton();
-        broadcast();
+        //inputStruct.pressedInventory = context.ReadValueAsButton();
+        //broadcast();
+        pressedInventory?.Invoke(context.ReadValueAsButton());
     }
 
     private void onSprintKeyPressed(InputAction.CallbackContext context)

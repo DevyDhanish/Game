@@ -15,12 +15,24 @@ public class FlashLight : MonoBehaviour, Iuseable
     public void Start()
     {
         lights = gameObject.GetComponent<Light>();
-        lights.enabled = active;
+        //lights.enabled = active;
     }
 
     public void use()
     {
         active = !active;
         lights.enabled = active;    
+    }
+
+    public void activate()
+    {
+        Rigidbody rb = gameObject.GetComponent<Rigidbody>();
+        rb.constraints = RigidbodyConstraints.FreezeAll;
+    }
+
+    public void deactivate()
+    {
+        Rigidbody rb = gameObject.GetComponent<Rigidbody>();
+        rb.constraints = RigidbodyConstraints.None;
     }
 }

@@ -80,6 +80,15 @@ public partial class @Controlls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Drop"",
+                    ""type"": ""Button"",
+                    ""id"": ""41f064c2-eeff-4097-a75d-f1ffd293b38f"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -192,6 +201,17 @@ public partial class @Controlls: IInputActionCollection2, IDisposable
                     ""action"": ""Sprint"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1d0fc1d1-2c5d-4bcf-929e-ace5ec9d662c"",
+                    ""path"": ""<Keyboard>/g"",
+                    ""interactions"": ""Press"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Drop"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -218,6 +238,7 @@ public partial class @Controlls: IInputActionCollection2, IDisposable
         m_GamePlay_Use = m_GamePlay.FindAction("Use", throwIfNotFound: true);
         m_GamePlay_Inventory = m_GamePlay.FindAction("Inventory", throwIfNotFound: true);
         m_GamePlay_Sprint = m_GamePlay.FindAction("Sprint", throwIfNotFound: true);
+        m_GamePlay_Drop = m_GamePlay.FindAction("Drop", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -285,6 +306,7 @@ public partial class @Controlls: IInputActionCollection2, IDisposable
     private readonly InputAction m_GamePlay_Use;
     private readonly InputAction m_GamePlay_Inventory;
     private readonly InputAction m_GamePlay_Sprint;
+    private readonly InputAction m_GamePlay_Drop;
     public struct GamePlayActions
     {
         private @Controlls m_Wrapper;
@@ -295,6 +317,7 @@ public partial class @Controlls: IInputActionCollection2, IDisposable
         public InputAction @Use => m_Wrapper.m_GamePlay_Use;
         public InputAction @Inventory => m_Wrapper.m_GamePlay_Inventory;
         public InputAction @Sprint => m_Wrapper.m_GamePlay_Sprint;
+        public InputAction @Drop => m_Wrapper.m_GamePlay_Drop;
         public InputActionMap Get() { return m_Wrapper.m_GamePlay; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -322,6 +345,9 @@ public partial class @Controlls: IInputActionCollection2, IDisposable
             @Sprint.started += instance.OnSprint;
             @Sprint.performed += instance.OnSprint;
             @Sprint.canceled += instance.OnSprint;
+            @Drop.started += instance.OnDrop;
+            @Drop.performed += instance.OnDrop;
+            @Drop.canceled += instance.OnDrop;
         }
 
         private void UnregisterCallbacks(IGamePlayActions instance)
@@ -344,6 +370,9 @@ public partial class @Controlls: IInputActionCollection2, IDisposable
             @Sprint.started -= instance.OnSprint;
             @Sprint.performed -= instance.OnSprint;
             @Sprint.canceled -= instance.OnSprint;
+            @Drop.started -= instance.OnDrop;
+            @Drop.performed -= instance.OnDrop;
+            @Drop.canceled -= instance.OnDrop;
         }
 
         public void RemoveCallbacks(IGamePlayActions instance)
@@ -378,5 +407,6 @@ public partial class @Controlls: IInputActionCollection2, IDisposable
         void OnUse(InputAction.CallbackContext context);
         void OnInventory(InputAction.CallbackContext context);
         void OnSprint(InputAction.CallbackContext context);
+        void OnDrop(InputAction.CallbackContext context);
     }
 }

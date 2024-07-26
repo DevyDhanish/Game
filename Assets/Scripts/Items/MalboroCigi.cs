@@ -10,6 +10,18 @@ public class MalboroCigi : MonoBehaviour, Iuseable
 
     public string discription => "Cigi";
 
+    public void activate()
+    {
+        Rigidbody rb = gameObject.GetComponent<Rigidbody>();
+        rb.constraints = RigidbodyConstraints.FreezeAll;
+    }
+
+    public void deactivate()
+    {
+        Rigidbody rb = gameObject.GetComponent<Rigidbody>();
+        rb.constraints = RigidbodyConstraints.None;
+    }
+
     public void use()
     {
         Debug.Log("Cigi used");

@@ -82,4 +82,24 @@ public class PlayerController : MonoBehaviour, IInputRecieve
 
         state.getState().OnUpdate(this);
     }
+
+    public void handleInteract(bool status)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public void handleDrop(bool status)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public void handleInventory(bool status)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public void handleUtility(bool status)
+    {
+        throw new System.NotImplementedException();
+    }
 }
