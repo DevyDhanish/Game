@@ -1,0 +1,248 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\dan\\grave yard\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7D21BE30-6305-BC36-71B2-7F686B02652B}|Assembly-CSharp.csproj|c:\\users\\dan\\grave yard\\assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D21BE30-6305-BC36-71B2-7F686B02652B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D21BE30-6305-BC36-71B2-7F686B02652B}|Assembly-CSharp.csproj|c:\\users\\dan\\grave yard\\assets\\scripts\\player\\fallstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D21BE30-6305-BC36-71B2-7F686B02652B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\fallstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D21BE30-6305-BC36-71B2-7F686B02652B}|Assembly-CSharp.csproj|C:\\Users\\dan\\grave yard\\assets\\scripts\\player\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D21BE30-6305-BC36-71B2-7F686B02652B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D21BE30-6305-BC36-71B2-7F686B02652B}|Assembly-CSharp.csproj|C:\\Users\\dan\\grave yard\\assets\\scripts\\player\\runningstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D21BE30-6305-BC36-71B2-7F686B02652B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\runningstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D21BE30-6305-BC36-71B2-7F686B02652B}|Assembly-CSharp.csproj|C:\\Users\\dan\\grave yard\\assets\\scripts\\misc\\copyrotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D21BE30-6305-BC36-71B2-7F686B02652B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\misc\\copyrotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D21BE30-6305-BC36-71B2-7F686B02652B}|Assembly-CSharp.csproj|C:\\Users\\dan\\grave yard\\assets\\scripts\\camera\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D21BE30-6305-BC36-71B2-7F686B02652B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camera\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D21BE30-6305-BC36-71B2-7F686B02652B}|Assembly-CSharp.csproj|C:\\Users\\dan\\grave yard\\assets\\scripts\\player\\walkstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D21BE30-6305-BC36-71B2-7F686B02652B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\walkstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D21BE30-6305-BC36-71B2-7F686B02652B}|Assembly-CSharp.csproj|C:\\Users\\dan\\grave yard\\assets\\scripts\\player\\headbob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D21BE30-6305-BC36-71B2-7F686B02652B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\headbob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D21BE30-6305-BC36-71B2-7F686B02652B}|Assembly-CSharp.csproj|C:\\Users\\dan\\grave yard\\assets\\scripts\\inputs\\inputbroadcaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D21BE30-6305-BC36-71B2-7F686B02652B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inputs\\inputbroadcaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D21BE30-6305-BC36-71B2-7F686B02652B}|Assembly-CSharp.csproj|C:\\Users\\dan\\grave yard\\assets\\scripts\\player\\animationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D21BE30-6305-BC36-71B2-7F686B02652B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\animationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D21BE30-6305-BC36-71B2-7F686B02652B}|Assembly-CSharp.csproj|C:\\Users\\dan\\grave yard\\assets\\scripts\\player\\idlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D21BE30-6305-BC36-71B2-7F686B02652B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\idlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D21BE30-6305-BC36-71B2-7F686B02652B}|Assembly-CSharp.csproj|C:\\Users\\dan\\grave yard\\assets\\scripts\\player\\playerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D21BE30-6305-BC36-71B2-7F686B02652B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D21BE30-6305-BC36-71B2-7F686B02652B}|Assembly-CSharp.csproj|C:\\Users\\dan\\grave yard\\assets\\scripts\\inputs\\inputstruct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D21BE30-6305-BC36-71B2-7F686B02652B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inputs\\inputstruct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D21BE30-6305-BC36-71B2-7F686B02652B}|Assembly-CSharp.csproj|C:\\Users\\dan\\grave yard\\assets\\scripts\\inputs\\iinputrecieve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D21BE30-6305-BC36-71B2-7F686B02652B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inputs\\iinputrecieve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FallState.cs",
+              "DocumentMoniker": "C:\\Users\\dan\\grave yard\\Assets\\Scripts\\Player\\FallState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\FallState.cs",
+              "ToolTip": "C:\\Users\\dan\\grave yard\\Assets\\Scripts\\Player\\FallState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\FallState.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T14:59:51.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HeadBob.cs",
+              "DocumentMoniker": "C:\\Users\\dan\\grave yard\\Assets\\Scripts\\Player\\HeadBob.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\HeadBob.cs",
+              "ToolTip": "C:\\Users\\dan\\grave yard\\Assets\\Scripts\\Player\\HeadBob.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\HeadBob.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAqwCMAAAB6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T08:58:54.825Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CopyRotation.cs",
+              "DocumentMoniker": "C:\\Users\\dan\\grave yard\\Assets\\Scripts\\misc\\CopyRotation.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\misc\\CopyRotation.cs",
+              "ToolTip": "C:\\Users\\dan\\grave yard\\Assets\\Scripts\\misc\\CopyRotation.cs",
+              "RelativeToolTip": "Assets\\Scripts\\misc\\CopyRotation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAABgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T17:17:32.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AnimationController.cs",
+              "DocumentMoniker": "C:\\Users\\dan\\grave yard\\Assets\\Scripts\\Player\\AnimationController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\AnimationController.cs",
+              "ToolTip": "C:\\Users\\dan\\grave yard\\Assets\\Scripts\\Player\\AnimationController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\AnimationController.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAQwCAAAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T16:56:27.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RunningState.cs",
+              "DocumentMoniker": "C:\\Users\\dan\\grave yard\\Assets\\Scripts\\Player\\RunningState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\RunningState.cs",
+              "ToolTip": "C:\\Users\\dan\\grave yard\\Assets\\Scripts\\Player\\RunningState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\RunningState.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T16:50:50.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CameraController.cs",
+              "DocumentMoniker": "C:\\Users\\dan\\grave yard\\Assets\\Scripts\\Camera\\CameraController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Camera\\CameraController.cs",
+              "ToolTip": "C:\\Users\\dan\\grave yard\\Assets\\Scripts\\Camera\\CameraController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Camera\\CameraController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAADwvyEAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T15:52:33.349Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Movement.cs",
+              "DocumentMoniker": "C:\\Users\\dan\\grave yard\\Assets\\Scripts\\Player\\Movement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Movement.cs",
+              "ToolTip": "C:\\Users\\dan\\grave yard\\Assets\\Scripts\\Player\\Movement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\Movement.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T14:46:10.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WalkState.cs",
+              "DocumentMoniker": "C:\\Users\\dan\\grave yard\\Assets\\Scripts\\Player\\WalkState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\WalkState.cs",
+              "ToolTip": "C:\\Users\\dan\\grave yard\\Assets\\Scripts\\Player\\WalkState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\WalkState.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAACbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T14:44:11.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IdleState.cs",
+              "DocumentMoniker": "C:\\Users\\dan\\grave yard\\Assets\\Scripts\\Player\\IdleState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\IdleState.cs",
+              "ToolTip": "C:\\Users\\dan\\grave yard\\Assets\\Scripts\\Player\\IdleState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\IdleState.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T14:43:36.405Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PlayerState.cs",
+              "DocumentMoniker": "C:\\Users\\dan\\grave yard\\Assets\\Scripts\\Player\\PlayerState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerState.cs",
+              "ToolTip": "C:\\Users\\dan\\grave yard\\Assets\\Scripts\\Player\\PlayerState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerState.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAQwAkAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T14:36:51.631Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "C:\\Users\\dan\\grave yard\\Assets\\Scripts\\Player\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerController.cs",
+              "ToolTip": "C:\\Users\\dan\\grave yard\\Assets\\Scripts\\Player\\PlayerController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerController.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAuwEsAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T07:37:30.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "InputBroadcaster.cs",
+              "DocumentMoniker": "C:\\Users\\dan\\grave yard\\Assets\\Scripts\\Inputs\\InputBroadcaster.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Inputs\\InputBroadcaster.cs",
+              "ToolTip": "C:\\Users\\dan\\grave yard\\Assets\\Scripts\\Inputs\\InputBroadcaster.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Inputs\\InputBroadcaster.cs",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAIwFUAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T06:59:48.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IInputRecieve.cs",
+              "DocumentMoniker": "C:\\Users\\dan\\grave yard\\Assets\\Scripts\\Inputs\\IInputRecieve.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Inputs\\IInputRecieve.cs",
+              "ToolTip": "C:\\Users\\dan\\grave yard\\Assets\\Scripts\\Inputs\\IInputRecieve.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Inputs\\IInputRecieve.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T06:58:21.317Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "InputStruct.cs",
+              "DocumentMoniker": "C:\\Users\\dan\\grave yard\\Assets\\Scripts\\Inputs\\InputStruct.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Inputs\\InputStruct.cs",
+              "ToolTip": "C:\\Users\\dan\\grave yard\\Assets\\Scripts\\Inputs\\InputStruct.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Inputs\\InputStruct.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T06:56:50.608Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
