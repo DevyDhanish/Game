@@ -5,7 +5,9 @@ Library/
 obj/
 Temp/
 UserSettings/
-.vsconfig/
+.vs/
+
+.vsconfig
 
 *.csproj
 *.sln

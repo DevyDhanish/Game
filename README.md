@@ -2,7 +2,7 @@
 
 **Official Repository**
 
-**Game Story** : To be Finilized
+**Game Story** : To be Finalized
 
 **Socials** <br>
 [Follow Instagram](https://www.instagram.com/ShadowStrikeGames) <br>
