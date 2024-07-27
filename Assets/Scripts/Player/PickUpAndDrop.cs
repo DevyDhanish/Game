@@ -39,7 +39,8 @@ public class PickUpAndDrop : MonoBehaviour, IInputRecieve
     }
 
     public void handleInput(InputStruct inputStruct)
-    {   
+    {
+           
     }
 
     public void handleInteract(bool status)

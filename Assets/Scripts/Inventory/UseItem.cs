@@ -16,7 +16,7 @@ public class UseItem : MonoBehaviour, IInputRecieve
 
     private void use()
     {
-        Inventory.Instance.currentEquipedItem.use();
+        if(Inventory.Instance.currentEquipedItem != null) Inventory.Instance.currentEquipedItem.use();
     }
 
     public void handleInput(InputStruct inputStruct)
@@ -41,6 +41,6 @@ public class UseItem : MonoBehaviour, IInputRecieve
 
     public void handleUtility(bool status)
     {
-        if(status) use();
+        if(status) use();   // if the button has been pressed
     }
 }

@@ -44,7 +44,9 @@ public class InputBroadcaster : MonoBehaviour
         inputActions.GamePlay.Sprint.canceled += onSprintKeyPressed;
 
         inputActions.GamePlay.Drop.started += onDropKeyPressed;
+        inputActions.GamePlay.Drop.canceled += onDropKeyPressed;
     }
+
     private void Start()
     {
         if(Instance != null && Instance != this)
@@ -95,13 +97,7 @@ public class InputBroadcaster : MonoBehaviour
         inputActions.GamePlay.Sprint.canceled -= onSprintKeyPressed;
 
         inputActions.GamePlay.Drop.started -= onDropKeyPressed;
-    }
-
-    private void onDropKeyPressed(InputAction.CallbackContext context)
-    {
-        //inputStruct.pressedDrop = context.ReadValueAsButton();
-        //broadcast();
-        pressedDrop?.Invoke(context.ReadValueAsButton());
+        inputActions.GamePlay.Drop.canceled -= onDropKeyPressed;
     }
 
     private void onMouseMovement(InputAction.CallbackContext context)
@@ -115,6 +111,20 @@ public class InputBroadcaster : MonoBehaviour
         inputStruct.movementVector = context.ReadValue<Vector2>();
         broadcast();
     }
+
+    private void onSprintKeyPressed(InputAction.CallbackContext context)
+    {
+        inputStruct.pressedSprint = context.ReadValueAsButton();
+        broadcast();
+    }
+
+    private void onDropKeyPressed(InputAction.CallbackContext context)
+    {
+        //inputStruct.pressedDrop = context.ReadValueAsButton();
+        //broadcast();
+        pressedDrop?.Invoke(context.ReadValueAsButton());
+    }
+
 
     private void onInteractKeyPressed(InputAction.CallbackContext context)
     {
@@ -137,9 +147,4 @@ public class InputBroadcaster : MonoBehaviour
         pressedInventory?.Invoke(context.ReadValueAsButton());
     }
 
-    private void onSprintKeyPressed(InputAction.CallbackContext context)
-    {
-        inputStruct.pressedSprint = context.ReadValueAsButton();
-        broadcast();
-    }
 }

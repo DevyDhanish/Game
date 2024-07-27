@@ -9,11 +9,13 @@ public class HeadBob : MonoBehaviour
 
     private Vector3 originalVector;
     private Vector3 originalRotVector;
+
     private void Start()
     {
         originalVector = transform.localPosition;
         originalRotVector = transform.localRotation.eulerAngles;
     }
+    
     public void headBob(float speed, float strength, float smoothness)
     {
         float val = Mathf.Sin(Time.time * speed) * strength;

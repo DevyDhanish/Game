@@ -8,6 +8,7 @@ public class WalkState : PlayerState
     {
         controller.animController.switchAnimation("MovementAnimation", AnimationController.animations.Walk);
     }
+
     public override void OnUpdate(PlayerController controller) 
     {
         Vector3 moveDir = controller.head.transform.forward * controller.inputs.movementVector.y + controller.head.transform.right * controller.inputs.movementVector.x;
@@ -17,5 +18,6 @@ public class WalkState : PlayerState
         controller.head.GetComponent<HeadBob>().headBob(controller.headBobWalkSpeed, controller.headBobStrength, controller.headBobSmoothness);
         controller.head.GetComponent<HeadBob>().headBobRot(controller.headRotBobWalkSpeed, controller.headRotBobStrength, controller.headRotBobSmoothness);
     }
+    
     public override void OnExit(PlayerController controller) { }
 }

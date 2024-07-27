@@ -21,6 +21,7 @@ public class CameraController : MonoBehaviour, IInputRecieve
         rotationVector = transform.rotation.eulerAngles;
         mouseMovement = new Vector3(0, 0, 0);
     }
+    
     void Update()
     {
         rotationVector.x -= mouseMovement.y;

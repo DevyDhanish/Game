@@ -8,6 +8,6 @@ public class ItemGUI : MonoBehaviour
 
     public void onClick()
     {
-        Inventory.Instance.equipItem(Item.GetComponent<Iuseable>().id);
+        if(Item != null) Inventory.Instance.equipItem(Item.GetComponent<Iuseable>().id);
     }
 }

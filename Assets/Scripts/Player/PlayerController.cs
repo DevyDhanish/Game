@@ -60,17 +60,17 @@ public class PlayerController : MonoBehaviour, IInputRecieve
         isGrounded = Physics.OverlapSphere(groundCheck.position, groundCheckRadius, standable).Length > 0;
         //Debug.Log(isGrounded);
         // idle
-        if(!isMoving && state.getState() != idleState)
+        if(!isMoving && state.getState() != idleState && isGrounded)
         {
             state.switchState(idleState);
         }
         // walk
-        if(isMoving && state.getState() != walkState)
+        if(isMoving && state.getState() != walkState && isGrounded)
         {
             state.switchState(walkState);
         }
         // running
-        if(isMoving && inputs.pressedSprint && state.getState() != runningState)
+        if(isMoving && inputs.pressedSprint && state.getState() != runningState && isGrounded)
         {
             state.switchState(runningState);
         }

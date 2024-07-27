@@ -2054,7 +2054,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sens: 20
   minX: -56
-  maxX: 90
+  maxX: 56
   target: {fileID: 2134909174}
 --- !u!1 &1700370673
 GameObject:
