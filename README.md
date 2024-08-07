@@ -2,7 +2,7 @@
 
 **Official Repository**
 
-**Game Story** : To be Finalized
+**Game Story** : [Story.pdf](media/I%20saw%20the%20devil%20(The%20Game).pdf)
 
 **Socials** <br>
 [Follow Instagram](https://www.instagram.com/ShadowStrikeGames) <br>
