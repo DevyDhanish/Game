@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FlashLight : MonoBehaviour, Iuseable
+public class FlashLight : MonoBehaviour, Iuseable, Iinteractable
 {
     public string Name => "FlashLight";
 
@@ -34,5 +34,10 @@ public class FlashLight : MonoBehaviour, Iuseable
     {
         Rigidbody rb = gameObject.GetComponent<Rigidbody>();
         rb.constraints = RigidbodyConstraints.None;
+    }
+
+    public void interact()
+    {
+        Inventory.Instance.addItem(this.gameObject);
     }
 }

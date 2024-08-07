@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MalboroCigi : MonoBehaviour, Iuseable
+public class MalboroCigi : MonoBehaviour, Iuseable, Iinteractable
 {
     public string Name => "Malboro cigi";
 
@@ -20,6 +20,11 @@ public class MalboroCigi : MonoBehaviour, Iuseable
     {
         Rigidbody rb = gameObject.GetComponent<Rigidbody>();
         rb.constraints = RigidbodyConstraints.None;
+    }
+
+    public void interact()
+    {
+        Inventory.Instance.addItem(this.gameObject);
     }
 
     public void use()

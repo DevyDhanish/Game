@@ -27,8 +27,9 @@ public class PickUpAndDrop : MonoBehaviour, IInputRecieve
 
         if(hit.transform)
         {
-            Inventory.Instance.addItem(hit.transform.gameObject);
-            Debug.Log(hit.transform.name);
+            if(hit.transform.GetComponent<Iuseable>() != null)
+                Inventory.Instance.addItem(hit.transform.gameObject);
+            //Debug.Log(hit.transform.name);
         }
     }
 
@@ -45,7 +46,7 @@ public class PickUpAndDrop : MonoBehaviour, IInputRecieve
 
     public void handleInteract(bool status)
     {
-        if(status) pickUp();
+        //if(status) pickUp();
     }
 
     public void handleDrop(bool status)
