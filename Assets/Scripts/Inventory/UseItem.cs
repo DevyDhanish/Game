@@ -19,26 +19,6 @@ public class UseItem : MonoBehaviour, IInputRecieve
         if(Inventory.Instance.currentEquipedItem != null) Inventory.Instance.currentEquipedItem.use();
     }
 
-    public void handleInput(InputStruct inputStruct)
-    {
-
-    }
-
-    public void handleInteract(bool status)
-    {
-        throw new System.NotImplementedException();
-    }
-
-    public void handleDrop(bool status)
-    {
-        throw new System.NotImplementedException();
-    }
-
-    public void handleInventory(bool status)
-    {
-        throw new System.NotImplementedException();
-    }
-
     public void handleUtility(bool status)
     {
         if(status) use();   // if the button has been pressed

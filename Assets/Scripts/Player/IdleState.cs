@@ -9,6 +9,17 @@ public class IdleState : PlayerState
         controller.animController.switchAnimation("MovementAnimation", AnimationController.animations.Idle);
     }
 
-    public override void OnUpdate(PlayerController controller) { }
+    public override void OnUpdate(PlayerController controller) 
+    {
+        if(controller.isMoving && controller.isGrounded)
+        {
+            controller.state.switchState(controller.walkState);
+        }
+    }
     public override void OnExit(PlayerController controller) { }
+
+    public override string getStateName()
+    {
+        return "Idle";
+    }
 }

@@ -48,24 +48,4 @@ public class CameraController : MonoBehaviour, IInputRecieve
     {
         transform.position = position;
     }
-
-    public void handleInteract(bool status)
-    {
-        throw new System.NotImplementedException();
-    }
-
-    public void handleDrop(bool status)
-    {
-        throw new System.NotImplementedException();
-    }
-
-    public void handleInventory(bool status)
-    {
-        throw new System.NotImplementedException();
-    }
-
-    public void handleUtility(bool status)
-    {
-        throw new System.NotImplementedException();
-    }
 }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -50,6 +51,11 @@ public class PlayerState
         return currentState;
     }
 
+    public virtual String getStateName() 
+    {
+        return "Not Defined";
+    }
+
     /// <summary>
     /// This method will change one state to another
     /// </summary>
@@ -63,6 +69,7 @@ public class PlayerState
             currentState.OnExit(controller);
         }
 
+        //Console.Instance.Log("Switched state from " + currentState.getStateName() + " to " + newState.getStateName());
         currentState = newState;
         currentState.OnEnter(controller);
     }

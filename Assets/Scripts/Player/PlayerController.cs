@@ -33,10 +33,10 @@ public class PlayerController : MonoBehaviour, IInputRecieve
     public InputStruct inputs { get; private set; }
     public Movement movement  { get; private set; }
 
-    private PlayerState state;
-    private IdleState idleState = new IdleState();
-    private WalkState walkState = new WalkState();
-    private RunningState runningState = new RunningState();
+    public PlayerState state;
+    public IdleState idleState = new IdleState();
+    public WalkState walkState = new WalkState();
+    public RunningState runningState = new RunningState();
     private FallState fallState = new FallState();
     
     public void handleInput(InputStruct playerInputs)
@@ -60,46 +60,29 @@ public class PlayerController : MonoBehaviour, IInputRecieve
         isGrounded = Physics.OverlapSphere(groundCheck.position, groundCheckRadius, standable).Length > 0;
         //Debug.Log(isGrounded);
         // idle
-        if(!isMoving && state.getState() != idleState && isGrounded)
-        {
-            state.switchState(idleState);
-        }
-        // walk
-        if(isMoving && state.getState() != walkState && isGrounded)
-        {
-            state.switchState(walkState);
-        }
-        // running
-        if(isMoving && inputs.pressedSprint && state.getState() != runningState && isGrounded)
-        {
-            state.switchState(runningState);
-        }
-        //falling
+        // if(!isMoving && state.getState() != idleState && isGrounded)
+        // {
+        //     state.switchState(idleState);
+        // }
+        // // walk
+        // if(isMoving && state.getState() != walkState && isGrounded)
+        // {
+        //     state.switchState(walkState);
+        //     //Console.Instance.Log("Player switched to Walk State");
+        // }
+        // // running
+        // if(isMoving && inputs.pressedSprint && state.getStateName() != "Running" && isGrounded)
+        // {
+        //     state.switchState(runningState);
+        //     //Console.Instance.Log("Player switched to Running State");
+        // }
+        // //falling
         if(!isGrounded)
         {
             state.switchState(fallState);
+            //Console.Instance.Log("Player switched to Falling State");
         }
 
         state.getState().OnUpdate(this);
-    }
-
-    public void handleInteract(bool status)
-    {
-        throw new System.NotImplementedException();
-    }
-
-    public void handleDrop(bool status)
-    {
-        throw new System.NotImplementedException();
-    }
-
-    public void handleInventory(bool status)
-    {
-        throw new System.NotImplementedException();
-    }
-
-    public void handleUtility(bool status)
-    {
-        throw new System.NotImplementedException();
     }
 }

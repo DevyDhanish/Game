@@ -13,4 +13,9 @@ public class FallState : PlayerState
         controller.movement.Move(-controller.transform.up, controller.fallSpeed);
     }
     public override void OnExit(PlayerController controller) { }
+
+    public override string getStateName()
+    {
+        return "Falling";
+    }
 }

@@ -17,7 +17,19 @@ public class RunningState : PlayerState
 
         controller.head.GetComponent<HeadBob>().headBob(controller.headBobRunSpeed, controller.headBobStrength, controller.headBobSmoothness);
         controller.head.GetComponent<HeadBob>().headBobRot(controller.headRotBobRunSpeed, controller.headRotBobStrength, controller.headRotBobSmoothness);
+    
+        if(!controller.inputs.pressedSprint && controller.isGrounded)
+        {
+            controller.state.switchState(controller.walkState);
+        }
+
+        if(!controller.isMoving) controller.state.switchState(controller.idleState);
     }
     
     public override void OnExit(PlayerController controller) { }
+
+    public override string getStateName()
+    {
+        return "Running";
+    }
 }

@@ -43,30 +43,10 @@ public class Interact : MonoBehaviour, IInputRecieve
         }
     }
 
-    public void handleDrop(bool status)
-    {
-        //throw new System.NotImplementedException();
-    }
-
-    public void handleInput(InputStruct inputStruct)
-    {
-        //throw new System.NotImplementedException();
-    }
-
     public void handleInteract(bool status)
     {
         //throw new System.NotImplementedException();
 
         if(status) onInteract();
-    }
-
-    public void handleInventory(bool status)
-    {
-        //throw new System.NotImplementedException();
-    }
-
-    public void handleUtility(bool status)
-    {
-        //throw new System.NotImplementedException();
     }
 }

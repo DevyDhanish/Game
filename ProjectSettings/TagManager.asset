@@ -15,8 +15,8 @@ TagManager:
   - standable
   - useables
   - interactable
-  - 
-  - 
+  - ObjectsToRender
+  - ObjectsToNotRender
   - 
   - 
   - 

@@ -54,38 +54,15 @@ public class InventoryGUI : MonoBehaviour, IInputRecieve
         }
     }
 
-    public void handleInput(InputStruct inputStruct)
-    {
-    }
-
     private void activateBoard()
     {
         active = !active;
-        
-        if(active) Cursor.lockState = CursorLockMode.None;
-        else Cursor.lockState = CursorLockMode.Locked;
-
         board.SetActive(active);
-    }
-
-    public void handleInteract(bool status)
-    {
-        throw new System.NotImplementedException();
-    }
-
-    public void handleDrop(bool status)
-    {
-        throw new System.NotImplementedException();
     }
 
     public void handleInventory(bool status)
     {
                 //pressedInventory = inputStruct.pressedInventory;
         activateBoard();
-    }
-
-    public void handleUtility(bool status)
-    {
-        throw new System.NotImplementedException();
     }
 }

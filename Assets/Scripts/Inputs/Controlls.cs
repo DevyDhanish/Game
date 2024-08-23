@@ -89,6 +89,15 @@ public partial class @Controlls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""DevConsole"",
+                    ""type"": ""Button"",
+                    ""id"": ""a48369cc-3cc2-4621-86cb-30f1431426c2"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -212,6 +221,17 @@ public partial class @Controlls: IInputActionCollection2, IDisposable
                     ""action"": ""Drop"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a481a56f-2c22-4348-ae22-518086f87b61"",
+                    ""path"": ""<Keyboard>/backquote"",
+                    ""interactions"": ""Press"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""DevConsole"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -239,6 +259,7 @@ public partial class @Controlls: IInputActionCollection2, IDisposable
         m_GamePlay_Inventory = m_GamePlay.FindAction("Inventory", throwIfNotFound: true);
         m_GamePlay_Sprint = m_GamePlay.FindAction("Sprint", throwIfNotFound: true);
         m_GamePlay_Drop = m_GamePlay.FindAction("Drop", throwIfNotFound: true);
+        m_GamePlay_DevConsole = m_GamePlay.FindAction("DevConsole", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -307,6 +328,7 @@ public partial class @Controlls: IInputActionCollection2, IDisposable
     private readonly InputAction m_GamePlay_Inventory;
     private readonly InputAction m_GamePlay_Sprint;
     private readonly InputAction m_GamePlay_Drop;
+    private readonly InputAction m_GamePlay_DevConsole;
     public struct GamePlayActions
     {
         private @Controlls m_Wrapper;
@@ -318,6 +340,7 @@ public partial class @Controlls: IInputActionCollection2, IDisposable
         public InputAction @Inventory => m_Wrapper.m_GamePlay_Inventory;
         public InputAction @Sprint => m_Wrapper.m_GamePlay_Sprint;
         public InputAction @Drop => m_Wrapper.m_GamePlay_Drop;
+        public InputAction @DevConsole => m_Wrapper.m_GamePlay_DevConsole;
         public InputActionMap Get() { return m_Wrapper.m_GamePlay; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -348,6 +371,9 @@ public partial class @Controlls: IInputActionCollection2, IDisposable
             @Drop.started += instance.OnDrop;
             @Drop.performed += instance.OnDrop;
             @Drop.canceled += instance.OnDrop;
+            @DevConsole.started += instance.OnDevConsole;
+            @DevConsole.performed += instance.OnDevConsole;
+            @DevConsole.canceled += instance.OnDevConsole;
         }
 
         private void UnregisterCallbacks(IGamePlayActions instance)
@@ -373,6 +399,9 @@ public partial class @Controlls: IInputActionCollection2, IDisposable
             @Drop.started -= instance.OnDrop;
             @Drop.performed -= instance.OnDrop;
             @Drop.canceled -= instance.OnDrop;
+            @DevConsole.started -= instance.OnDevConsole;
+            @DevConsole.performed -= instance.OnDevConsole;
+            @DevConsole.canceled -= instance.OnDevConsole;
         }
 
         public void RemoveCallbacks(IGamePlayActions instance)
@@ -408,5 +437,6 @@ public partial class @Controlls: IInputActionCollection2, IDisposable
         void OnInventory(InputAction.CallbackContext context);
         void OnSprint(InputAction.CallbackContext context);
         void OnDrop(InputAction.CallbackContext context);
+        void OnDevConsole(InputAction.CallbackContext context);
     }
 }

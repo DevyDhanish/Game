@@ -17,6 +17,7 @@ public class InputBroadcaster : MonoBehaviour
     public static event Action<bool> pressedDrop;
     public static event Action<bool> pressedInventory;
     public static event Action<bool> pressedUtility;
+    public static event Action<bool> pressedDevConsoleButton;
 
     private void Awake()
     {
@@ -45,6 +46,9 @@ public class InputBroadcaster : MonoBehaviour
 
         inputActions.GamePlay.Drop.started += onDropKeyPressed;
         inputActions.GamePlay.Drop.canceled += onDropKeyPressed;
+
+        inputActions.GamePlay.DevConsole.started += onDevConsoleButtonPressed;
+        //inputActions.GamePlay.DevConsole.canceled += onDevConsoleButtonPressed;
     }
 
     private void Start()
@@ -98,6 +102,14 @@ public class InputBroadcaster : MonoBehaviour
 
         inputActions.GamePlay.Drop.started -= onDropKeyPressed;
         inputActions.GamePlay.Drop.canceled -= onDropKeyPressed;
+
+        inputActions.GamePlay.DevConsole.started -= onDevConsoleButtonPressed;
+        //inputActions.GamePlay.DevConsole.canceled -= onDevConsoleButtonPressed;
+    }
+
+    private void onDevConsoleButtonPressed(InputAction.CallbackContext context)
+    {
+        pressedDevConsoleButton?.Invoke(context.ReadValueAsButton());
     }
 
     private void onMouseMovement(InputAction.CallbackContext context)
